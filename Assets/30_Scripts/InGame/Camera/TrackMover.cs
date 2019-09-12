@@ -8,6 +8,8 @@ namespace InGame
 
 		[SerializeField]
 		private Transform targetTransform = null;
+		[SerializeField]
+		private Vector3 bufferPosition = VECTOR3_ZERO;
 		[Space(8)]
 		[SerializeField]
 		private bool isFreezeX = false;
@@ -26,6 +28,13 @@ namespace InGame
 				Debug.Break();
 				return;
 			}
+
+			var nextPos = this.targetTransform.position + this.bufferPosition;
+			var pos = this.transform.position;
+			if (this.isFreezeX) { nextPos.x = pos.x; }
+			if (this.isFreezeY) { nextPos.y = pos.y; }
+			if (this.isFreezeZ) { nextPos.z = pos.z; }
+			this.transform.position = nextPos;
 
 			this.prevPosition = this.targetTransform.position;
 		}
