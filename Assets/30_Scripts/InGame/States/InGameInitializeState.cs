@@ -14,11 +14,22 @@ namespace InGame
 
 		protected override void OnSubStart()
 		{
+			// player
+			InGameManager.Inst.MaoManager.SubStart();
+			InGameManager.Inst.BraverManager.SubStart();
+
+			// npc
+			InGameManager.Inst.MonsterManager.SubStart();
+
+			// gimmick
+			InGameManager.Inst.GateManager.SubStart();
+			InGameManager.Inst.CrystalManager.SubStart();
+			InGameManager.Inst.StatueManager.SubStart();
 		}
 
 		protected override void OnSubUpdate()
 		{
-			this.TestUpdate();
+			this.Change(InGameStateManager.State.Game);
 		}
 
 		protected override void OnSubEnd()
@@ -27,10 +38,6 @@ namespace InGame
 
 		private void TestUpdate()
 		{
-			if (Input.GetKeyDown(KeyCode.Return))
-			{
-				this.Change(InGameStateManager.State.Game);
-			}
 		}
 	}
 }
