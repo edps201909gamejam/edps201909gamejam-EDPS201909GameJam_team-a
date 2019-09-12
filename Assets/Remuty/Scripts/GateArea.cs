@@ -9,10 +9,14 @@ public class GateArea : MonoBehaviour
 	public GameObject gate;
 	public GameObject gauge;
 	[SerializeField] int gate_max = 10;
+	[SerializeField] int symbol_count = 2;
+	int symbol_destroy;
+	[SerializeField] string joystick_o;
 	// Start is called before the first frame update
 	void Start()
     {
 		gate_charge = gate_max;
+		symbol_destroy = gate_max / 3;
     }
 
     // Update is called once per frame
@@ -22,6 +26,12 @@ public class GateArea : MonoBehaviour
 		{
 			Destroy(gate);
 		}
+		GameObject[] symbol = GameObject.FindGameObjectsWithTag("Symbol");
+		if (symbol.Length == symbol_count - 1)					//女神像を破壊するとチャージがたまる
+		{
+			symbol_count = symbol.Length;
+			gate_charge -= symbol_destroy;
+		}
 		GaugeDown(gate_charge, gate_max);
 	}
 
@@ -29,7 +39,7 @@ public class GateArea : MonoBehaviour
 	{
 		if (c.tag == "Mao")
 		{
-			if (Input.GetKey(KeyCode.JoystickButton1))
+			if (Input.GetButton(joystick_o))
 			{
 					gate_charge -= Time.deltaTime;
 			}
