@@ -25,7 +25,11 @@ public class MpCount : MonoBehaviour
             crystal_count++;
         }
         GameObject[] crystal = GameObject.FindGameObjectsWithTag("Crystal");
-        if (crystal.Length == crystal_count -1)
+        if (crystal.Length == crystal_count + 1)
+        {
+            crystal_count++;
+        }
+        if (crystal.Length == crystal_count - 1)
         {
             crystal_count--;
             mp++;

@@ -308,6 +308,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stan_time: 5
+  skill_count: 2
+  joystick_x: Joystick1_x
+  crystal: {fileID: 1173378224464579395, guid: b2264bb8a0e35114b93fa8da7210a05d, type: 3}
 --- !u!195 &2397316523613456906
 NavMeshAgent:
   m_ObjectHideFlags: 0

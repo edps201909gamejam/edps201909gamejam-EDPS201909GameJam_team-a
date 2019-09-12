@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Skill : MonoBehaviour
+public class BraverSkill : MonoBehaviour
 {
     float skill_time = 1;
     // Start is called before the first frame update
@@ -15,7 +15,7 @@ public class Skill : MonoBehaviour
     void Update()
     {
         skill_time -= Time.deltaTime;
-		if(skill_time <= 0)
+        if (skill_time <= 0)
         {
             Destroy(gameObject);
         }
