@@ -1,5 +1,10 @@
 using System.ComponentModel;
 
+// by flanny7
+// PS4のコントローラがjoystick 1
+// PS2のコントローラがjoystick 2
+// であることが前提です
+
 public enum Axes
 {
 	[Description("p1_horizontal_button")]
@@ -62,4 +67,32 @@ public enum Axes
 	p2_button_start,
 	[Description("p2_button_select")]
 	p2_button_select,
+}
+
+public enum AxesHorizontal
+{
+	[Description("p1_horizontal_button")]
+	p1_horizontal_button,
+	[Description("p1_horizontal_stick_L")]
+	p1_horizontal_stick_L,
+	[Description("p1_horizontal_stick_R")]
+	p1_horizontal_stick_R,
+	[Description("p2_horizontal_button")]
+	p2_horizontal_button,
+	[Description("p2_horizontal_stick_L")]
+	p2_horizontal_stick_L,
+}
+
+public enum AxesVertical
+{
+	[Description("p1_vertical_button")]
+	p1_vertical_button,
+	[Description("p1_vertical_stick_L")]
+	p1_vertical_stick_L,
+	[Description("p1_vertical_stick_R")]
+	p1_vertical_stick_R,
+	[Description("p2_vertical_button")]
+	p2_vertical_button,
+	[Description("p2_vertical_stick_L")]
+	p2_vertical_stick_L,
 }
