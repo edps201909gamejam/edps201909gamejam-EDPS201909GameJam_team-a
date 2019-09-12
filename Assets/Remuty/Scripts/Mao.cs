@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Mao : MonoBehaviour
 {
     bool stan = false;
@@ -45,6 +45,18 @@ public class Mao : MonoBehaviour
             stan_count = stan_time;
             stan = true;
             GetComponent<Player>().enabled = false;
+        }
+        if (c.tag == "Gate")
+        {
+            SceneManager.LoadScene("ResultTest");
+        }
+    }
+
+	private void OnCollisionEnter(Collision c)
+    {
+		if(c.gameObject.tag == "Braver")
+        {
+            SceneManager.LoadScene("ResultTest");
         }
     }
 }

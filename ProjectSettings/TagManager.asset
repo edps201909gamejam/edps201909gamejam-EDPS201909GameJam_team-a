@@ -12,6 +12,7 @@ TagManager:
   - Skill
   - MagicCircle
   - Crystal
+  - Gate
   layers:
   - Default
   - TransparentFX
