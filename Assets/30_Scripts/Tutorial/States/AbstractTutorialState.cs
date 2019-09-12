@@ -6,13 +6,13 @@ namespace Tutorial
 	public abstract class AbstractTutorialState : IStateable
 	{
 		protected TutorialStateChange Change = null;
-		private bool isDebug = false;
+		protected bool IsDebug { get; private set; } = false;
 		private bool isStart = false;
 
 		public AbstractTutorialState(TutorialStateChange _change, bool _isDebug = false)
 		{
 			this.Change = _change;
-			this.isDebug = _isDebug;
+			this.IsDebug = _isDebug;
 		}
 
 		/// <summary>
@@ -20,7 +20,7 @@ namespace Tutorial
 		/// </summary>
 		public void SubStart()
 		{
-			if (this.isDebug)
+			if (this.IsDebug)
 			{
 				DebugText.Inst.AddDebugText(this.GetType().Name + ": Start.");
 			}
@@ -43,7 +43,7 @@ namespace Tutorial
 				return;
 			}
 
-			if (this.isDebug)
+			if (this.IsDebug)
 			{
 				DebugText.Inst.AddDebugText(this.GetType().Name + ": Update.");
 			}
@@ -56,7 +56,7 @@ namespace Tutorial
 		/// </summary>
 		public void SubEnd()
 		{
-			if (this.isDebug)
+			if (this.IsDebug)
 			{
 				DebugText.Inst.AddDebugText(this.GetType().Name + ": End.");
 			}
