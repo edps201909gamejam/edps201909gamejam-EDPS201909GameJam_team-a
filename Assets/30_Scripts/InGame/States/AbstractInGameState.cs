@@ -1,15 +1,15 @@
 using uf7lib;
 using UnityEngine;
 
-namespace Tutorial
+namespace InGame
 {
-	public abstract class AbstractTutorialState : IStateable
+	public abstract class AbstractInGameState : IStateable
 	{
-		protected TutorialStateChange Change = null;
+		protected InGameStateChange Change = null;
 		protected bool IsDebug { get; private set; } = false;
 		private bool isStart = false;
 
-		public AbstractTutorialState(TutorialStateChange _change, bool _isDebug = false)
+		public AbstractInGameState(InGameStateChange _change, bool _isDebug = false)
 		{
 			this.Change = _change;
 			this.IsDebug = _isDebug;
