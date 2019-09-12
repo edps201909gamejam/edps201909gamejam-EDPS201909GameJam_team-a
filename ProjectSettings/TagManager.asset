@@ -8,6 +8,7 @@ TagManager:
   - Mao
   - GateArea
   - Symbol
+  - Monster
   layers:
   - Default
   - TransparentFX

@@ -1,18 +1,23 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Braver : MonoBehaviour
 {
 	[SerializeField] string joystick_o;
+	public GameObject braver;
+    GameObject respawn;
 	Animator animator;
 	public Status status;
 	float hp;
-	// Start is called before the first frame update
-	void Start()
+    public GameObject gauge;
+    // Start is called before the first frame update
+    void Start()
     {
 		animator = GetComponent<Animator>();
 		hp = status.maxHp;
+        respawn = GameObject.FindGameObjectWithTag("Respawn");
 	}
 
     // Update is called once per frame
@@ -26,13 +31,25 @@ public class Braver : MonoBehaviour
 		{
 			animator.SetBool("AttackFlag", false);
 		}
-	}
+		if(hp <= 0)
+        {
+            Instantiate(braver, respawn.transform.position,Quaternion.identity);
+            Destroy(gameObject);
+        }
+        GaugeDown(hp, status.maxHp);
+    }
 
 	private void OnCollisionStay(Collision c)
 	{
 		if (c.gameObject.tag == "Monster")
 		{
-			
+            int monster_atk = c.gameObject.GetComponent<Monster>().status.atk;
+            hp -= monster_atk * Time.deltaTime;
 		}
 	}
+
+    void GaugeDown(float current, int max)
+    {
+        gauge.GetComponent<Image>().fillAmount = current / max;
+    }
 }
