@@ -9,6 +9,9 @@ TagManager:
   - GateArea
   - Symbol
   - Monster
+  - Skill
+  - MagicCircle
+  - Crystal
   layers:
   - Default
   - TransparentFX

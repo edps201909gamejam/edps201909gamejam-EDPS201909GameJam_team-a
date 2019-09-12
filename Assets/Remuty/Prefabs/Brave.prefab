@@ -308,9 +308,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick_o: Joystick2_o
+  joystick_x: Joystick2_x
   braver: {fileID: 1037631900828032522}
-  status: {fileID: 11400000, guid: ef315b4fc7e034790803137ae7a4a9cf, type: 2}
   gauge: {fileID: 725855626900366563}
+  skill: {fileID: 5297322585410101885, guid: af7c9f0dfb6a10a4d8b4974a8460270a, type: 3}
+  status: {fileID: 11400000, guid: ef315b4fc7e034790803137ae7a4a9cf, type: 2}
+  mp_count: {fileID: 5150956915801402338, guid: b9bb839865b98a94089feb1e96bc5692,
+    type: 3}
 --- !u!1 &1037631900828032524
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1173378224464579394}
   m_Layer: 12
   m_Name: Crystal
-  m_TagString: Untagged
+  m_TagString: Crystal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,6 +109,7 @@ MonoBehaviour:
   monster:
   - {fileID: 1275151881253517889, guid: b87c5accdc0904f4fbc3063d13e29630, type: 3}
   gauge: {fileID: 5155378238815731475}
+  hp: 0
   status: {fileID: 11400000, guid: d1b8990c8550e094382dc4a2f1b9416a, type: 2}
 --- !u!1 &3584569294484298583
 GameObject:

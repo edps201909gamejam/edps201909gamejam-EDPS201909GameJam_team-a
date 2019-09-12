@@ -8,7 +8,7 @@ public class Crystal : MonoBehaviour
     [SerializeField] GameObject[] monster;
     float interval = 2;
     public GameObject gauge;
-    float hp;
+    public float hp;
     public Status status;
     // Start is called before the first frame update
     void Start()
