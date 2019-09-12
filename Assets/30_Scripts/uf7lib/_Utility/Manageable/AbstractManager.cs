@@ -1,4 +1,4 @@
-﻿namespace AROhajiki.Utility
+namespace uf7lib
 {
     public abstract class AbstractManager : IManageable
     {

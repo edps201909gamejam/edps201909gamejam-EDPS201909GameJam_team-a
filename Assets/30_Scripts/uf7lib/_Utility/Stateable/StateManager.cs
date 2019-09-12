@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace AROhajiki.Utility
+namespace uf7lib
 {
     public sealed class StateManager<T> : AbstractManager, IManageable
     {
