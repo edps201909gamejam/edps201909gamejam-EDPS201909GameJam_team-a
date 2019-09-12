@@ -11,6 +11,7 @@ public class GateArea : MonoBehaviour
 	[SerializeField] int gate_max = 10;
 	[SerializeField] int symbol_count = 2;
 	int symbol_destroy;
+	[SerializeField] string joystick_o;
 	// Start is called before the first frame update
 	void Start()
     {
@@ -38,7 +39,7 @@ public class GateArea : MonoBehaviour
 	{
 		if (c.tag == "Mao")
 		{
-			if (Input.GetKey(KeyCode.JoystickButton1))
+			if (Input.GetButton(joystick_o))
 			{
 					gate_charge -= Time.deltaTime;
 			}

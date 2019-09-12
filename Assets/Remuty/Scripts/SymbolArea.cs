@@ -6,8 +6,9 @@ public class SymbolArea : MonoBehaviour
 {
 	public GameObject symbol;
 	[SerializeField] float symbol_charge = 5;
-    // Start is called before the first frame update
-    void Start()
+	[SerializeField] string joystick_o;
+	// Start is called before the first frame update
+	void Start()
     {
         
     }
@@ -25,7 +26,7 @@ public class SymbolArea : MonoBehaviour
 	{
 		if (c.tag == "Mao")
 		{
-			if (Input.GetKey(KeyCode.JoystickButton1))
+			if (Input.GetButton(joystick_o))
 			{
 				symbol_charge -= Time.deltaTime;
 			}

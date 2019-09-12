@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1275151880657009156}
   - component: {fileID: 1275151880657009158}
   - component: {fileID: 1275151880657009157}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Jack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1275151881253873251}
   - component: {fileID: 1275151881242015557}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: jack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1275151881253873253}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1275151881253873255}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
