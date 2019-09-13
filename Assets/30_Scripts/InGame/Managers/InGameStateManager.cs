@@ -45,11 +45,11 @@ namespace InGame
 			this.stateManager.SubStart();
 
 			// instanceの生成 by flanny7
-			this.initState = new InGameInitializeState(this.stateManager.Change, true);
-			this.gameState = new InGameGameState(this.stateManager.Change, true);
-			this.pauseState = new InGamePauseState(this.stateManager.Change, true);
-			this.resultState = new InGameResultState(this.stateManager.Change, true);
-			this.endState = new InGameEndState(this.stateManager.Change, true);
+			this.initState = new InGameInitializeState(this.Change, true);
+			this.gameState = new InGameGameState(this.Change, true);
+			this.pauseState = new InGamePauseState(this.Change, true);
+			this.resultState = new InGameResultState(this.Change, true);
+			this.endState = new InGameEndState(this.Change, true);
 
 			// Stateの追加 by flanny7
 			this.stateManager.Add(State.Initialize, this.initState);

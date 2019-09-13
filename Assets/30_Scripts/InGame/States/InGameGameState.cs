@@ -58,6 +58,21 @@ namespace InGame
 		{
 			if (this.IsDebug) { DebugText.Inst.AddDebugText("InGame/Game: Play."); }
 
+			// player
+			InGameManager.Inst.MaoManager.SubUpdate();
+			InGameManager.Inst.BraverManager.SubUpdate();
+
+			// npc
+			InGameManager.Inst.MonsterManager.SubUpdate();
+
+			// gimmick
+			InGameManager.Inst.GateManager.SubUpdate();
+			InGameManager.Inst.CrystalManager.SubUpdate();
+			InGameManager.Inst.StatueManager.SubUpdate();
+
+			// timer
+			InGameManager.Inst.Timer.SubUpdate();
+
 			if (Input.GetKeyDown(KeyCode.Return)) { this.SubChange(State.CutIn); }
 		}
 

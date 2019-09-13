@@ -21,13 +21,16 @@ namespace InGame
 		private CrystalManager crystalManager = null;
 		[SerializeField]
 		private StatueManager statueManager = null;
+		[SerializeField]
+		private FTimer timer = null;
 
 		public MaoManager MaoManager { get => this.maoManager; }
 		public BraverManager BraverManager { get => this.braverManager; }
 		public MonsterManager MonsterManager { get => this.monsterManager; }
 		public GateManager GateManager { get => this.gateManager; }
 		public CrystalManager CrystalManager { get => this.crystalManager; }
-		public StatueManager StatueManager { get => this.StatueManager; }
+		public StatueManager StatueManager { get => this.statueManager; }
+		public FTimer Timer { get => this.timer; }
 
 		public void LoadScene(string _sceneName)
 		{
@@ -44,6 +47,7 @@ namespace InGame
 			this.NullCheck(this.gateManager);
 			this.NullCheck(this.crystalManager);
 			this.NullCheck(this.statueManager);
+			this.NullCheck(this.timer);
 
 			// 初期化 by flanny7
 			this.stateManager.SubStart();
