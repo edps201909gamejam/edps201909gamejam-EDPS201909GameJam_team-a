@@ -4,6 +4,11 @@ using UnityEngine;
 
 public sealed class InputController : Singleton<InputController>
 {
+	public enum Player
+	{
+		pl1,
+		pl2,
+	}
 	public enum Horizontal
 	{
 		Left,
@@ -69,4 +74,34 @@ public sealed class InputController : Singleton<InputController>
 	public float GetAxisRaw(Axes _axes) { return Input.GetAxisRaw(_axes.ToDescription()); }
 	public float GetAxisRaw(AxesHorizontal _axes) { return Input.GetAxisRaw(_axes.ToDescription()); }
 	public float GetAxisRaw(AxesVertical _axes) { return Input.GetAxisRaw(_axes.ToDescription()); }
+
+	public bool GetDirectionButton(KeyCode _keyCode, Player _pl, Horizontal _hori)
+	{
+		if (Input.GetKey(_keyCode)) { return true; }
+
+		var btn = (_pl is Player.pl1) ?
+					this.GetHorizontalButton(AxesHorizontal.p1_horizontal_button, _hori) ||
+					this.GetHorizontalButton(AxesHorizontal.p1_horizontal_stick_L, _hori) :
+				  (_pl is Player.pl2) ?
+					this.GetHorizontalButton(AxesHorizontal.p2_horizontal_button, _hori) ||
+					this.GetHorizontalButton(AxesHorizontal.p2_horizontal_stick_L, _hori) :
+			  false;
+
+		return btn;
+	}
+
+	public bool GetDirectionButton(KeyCode _keyCode, Player _pl, Vertical _vart)
+	{
+		if (Input.GetKey(_keyCode)) { return true; }
+
+		var btn = (_pl is Player.pl1) ?
+					this.GetVerticalButton(AxesVertical.p1_vertical_button, _vart) ||
+					this.GetVerticalButton(AxesVertical.p1_vertical_stick_L, _vart) :
+				  (_pl is Player.pl2) ?
+					this.GetVerticalButton(AxesVertical.p2_vertical_button, _vart) ||
+					this.GetVerticalButton(AxesVertical.p2_vertical_stick_L, _vart) :
+			  false;
+
+		return btn;
+	}
 }

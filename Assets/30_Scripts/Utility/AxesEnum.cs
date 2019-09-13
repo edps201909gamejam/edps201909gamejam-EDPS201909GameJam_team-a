@@ -15,10 +15,6 @@ public enum Axes
 	p1_horizontal_stick_L,
 	[Description("p1_vertical_stick_L")]
 	p1_vertical_stick_L,
-	[Description("p1_horizontal_stick_R")]
-	p1_horizontal_stick_R,
-	[Description("p1_vertical_stick_R")]
-	p1_vertical_stick_R,
 	[Description("p1_button_circle")]
 	p1_button_circle,
 	[Description("p1_button_cross")]
@@ -75,8 +71,6 @@ public enum AxesHorizontal
 	p1_horizontal_button,
 	[Description("p1_horizontal_stick_L")]
 	p1_horizontal_stick_L,
-	[Description("p1_horizontal_stick_R")]
-	p1_horizontal_stick_R,
 	[Description("p2_horizontal_button")]
 	p2_horizontal_button,
 	[Description("p2_horizontal_stick_L")]
@@ -89,8 +83,6 @@ public enum AxesVertical
 	p1_vertical_button,
 	[Description("p1_vertical_stick_L")]
 	p1_vertical_stick_L,
-	[Description("p1_vertical_stick_R")]
-	p1_vertical_stick_R,
 	[Description("p2_vertical_button")]
 	p2_vertical_button,
 	[Description("p2_vertical_stick_L")]
