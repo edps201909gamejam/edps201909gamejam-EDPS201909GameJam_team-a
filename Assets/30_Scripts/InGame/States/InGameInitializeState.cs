@@ -25,6 +25,9 @@ namespace InGame
 			InGameManager.Inst.GateManager.SubStart();
 			InGameManager.Inst.CrystalManager.SubStart();
 			InGameManager.Inst.StatueManager.SubStart();
+
+			// timer
+			InGameManager.Inst.Timer.SubStart();
 		}
 
 		protected override void OnSubUpdate()
