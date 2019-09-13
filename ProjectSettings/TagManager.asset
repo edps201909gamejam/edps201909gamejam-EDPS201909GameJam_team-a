@@ -8,6 +8,11 @@ TagManager:
   - Mao
   - GateArea
   - Symbol
+  - Monster
+  - Skill
+  - MagicCircle
+  - Crystal
+  - Gate
   layers:
   - Default
   - TransparentFX
