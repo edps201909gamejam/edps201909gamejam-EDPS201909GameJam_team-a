@@ -63,7 +63,7 @@ namespace InGame
 
 			if (this.hitPoint.IsDead)
 			{
-				this.pool.Destroy(this);
+				this.pool.Remove(this);
 			}
 		}
 

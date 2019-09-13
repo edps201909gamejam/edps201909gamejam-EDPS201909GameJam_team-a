@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6294922055705768936}
   m_Layer: 14
   m_Name: CrystalActor
-  m_TagString: Untagged
+  m_TagString: Crystal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,7 +87,7 @@ MonoBehaviour:
   monsterPrefabs:
   - {fileID: 3935704563793920481, guid: 26e8ce53159ade74683a1239e017c5d9, type: 3}
   numAtOnce: 1
-  intervalTime: 2
+  intervalTime: 3
 --- !u!114 &7064824731475133754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,6 +395,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1814539659765897605}
     m_Modifications:
+    - target: {fileID: 5720940955279804791, guid: 222f26e95792fc54ead424e6d51e8757,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal
+      objectReference: {fileID: 0}
     - target: {fileID: 5720940955279804784, guid: 222f26e95792fc54ead424e6d51e8757,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -449,11 +454,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5720940955279804791, guid: 222f26e95792fc54ead424e6d51e8757,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 222f26e95792fc54ead424e6d51e8757, type: 3}

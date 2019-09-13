@@ -23,10 +23,10 @@ namespace InGame
 			_monster.SetPool(this);
 		}
 
-		public void Destroy(MonsterManager _monster)
+		public void Remove(MonsterManager _monster)
 		{
 			this.monsters.Remove(_monster);
-			Destroy(_monster);
+			Destroy(_monster.gameObject);
 		}
 
 		public void Frieze()

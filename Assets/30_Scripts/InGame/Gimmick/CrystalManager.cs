@@ -62,7 +62,7 @@ namespace InGame
 			if (this.canGenerateMonster)
 			{
 
-				if (this.hitPoint.IsDead) { Destroy(this.gameObject); }
+				if (this.hitPoint.IsDead) { this.DestroyCrystal(); }
 			}
 			else
 			{
@@ -76,6 +76,12 @@ namespace InGame
 					return;
 				}
 			}
+		}
+
+		private void DestroyCrystal()
+		{
+			GameObject.FindGameObjectWithTag("Braver").GetComponent<MagicPoint>().Heal(1);
+			Destroy(this.gameObject);
 		}
 
 		private void Frieze()

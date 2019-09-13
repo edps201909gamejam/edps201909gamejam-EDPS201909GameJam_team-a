@@ -61,6 +61,7 @@ namespace InGame
 		{
 			this.hitPoint.Heal(int.MaxValue);
 			this.hitPointGage.SetRate(this.hitPoint.Rate);
+			this.respawner.Initialize(this.Restart);
 		}
 
 		private void Frieze()
