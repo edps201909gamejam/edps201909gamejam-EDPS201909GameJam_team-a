@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1264,7 +1264,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1125973736
 BoxCollider:
@@ -2343,6 +2343,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: MP Count
       objectReference: {fileID: 0}
+    - target: {fileID: 5150956915801402338, guid: b9bb839865b98a94089feb1e96bc5692,
+        type: 3}
+      propertyPath: circle_count
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5150956915801402338, guid: b9bb839865b98a94089feb1e96bc5692,
+        type: 3}
+      propertyPath: mp
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5052194683637450121, guid: b9bb839865b98a94089feb1e96bc5692,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2396,16 +2406,6 @@ PrefabInstance:
     - target: {fileID: 5052194683637450121, guid: b9bb839865b98a94089feb1e96bc5692,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5150956915801402338, guid: b9bb839865b98a94089feb1e96bc5692,
-        type: 3}
-      propertyPath: circle_count
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5150956915801402338, guid: b9bb839865b98a94089feb1e96bc5692,
-        type: 3}
-      propertyPath: mp
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
