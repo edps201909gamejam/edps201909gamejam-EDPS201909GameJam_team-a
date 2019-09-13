@@ -1,26 +1,30 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SymbolArea : MonoBehaviour
 {
 	public GameObject symbol;
-	[SerializeField] float symbol_charge = 5;
 	[SerializeField] string joystick_o;
-	// Start is called before the first frame update
-	void Start()
+    public GameObject gauge;
+    float hp;
+    public Status status;
+    // Start is called before the first frame update
+    void Start()
     {
-        
+        hp = status.maxHp;
     }
 
     // Update is called once per frame
     void Update()
     {
-		if (symbol_charge <= 0)
-		{
-			Destroy(symbol);
-		}
-	}
+        GaugeDown(hp, status.maxHp);
+        if (hp <= 0)
+        {
+            Destroy(symbol);
+        }
+    }
 
 	private void OnTriggerStay(Collider c)
 	{
@@ -28,8 +32,13 @@ public class SymbolArea : MonoBehaviour
 		{
 			if (Input.GetButton(joystick_o))
 			{
-				symbol_charge -= Time.deltaTime;
+				hp -= Time.deltaTime;
 			}
 		}
 	}
+
+    void GaugeDown(float current, int max)
+    {
+        gauge.GetComponent<Image>().fillAmount = current / max;
+    }
 }
