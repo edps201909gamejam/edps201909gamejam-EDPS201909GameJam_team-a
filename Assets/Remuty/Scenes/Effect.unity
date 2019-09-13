@@ -447,6 +447,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &949471920432415151
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 949471920460920229, guid: f33a00ff563c5411289423888fb5ea00,
+        type: 3}
+      propertyPath: m_Name
+      value: MaoSkillEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 949471920460920228, guid: f33a00ff563c5411289423888fb5ea00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949471920460920228, guid: f33a00ff563c5411289423888fb5ea00,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949471920460920228, guid: f33a00ff563c5411289423888fb5ea00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949471920460920228, guid: f33a00ff563c5411289423888fb5ea00,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949471920460920228, guid: f33a00ff563c5411289423888fb5ea00,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949471920460920228, guid: f33a00ff563c5411289423888fb5ea00,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949471920460920228, guid: f33a00ff563c5411289423888fb5ea00,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 949471920460920228, guid: f33a00ff563c5411289423888fb5ea00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 949471920460920228, guid: f33a00ff563c5411289423888fb5ea00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949471920460920228, guid: f33a00ff563c5411289423888fb5ea00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 949471920460920228, guid: f33a00ff563c5411289423888fb5ea00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f33a00ff563c5411289423888fb5ea00, type: 3}
 --- !u!1001 &1997874797457497030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -755,6 +824,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SymbolDestroyEffect
       objectReference: {fileID: 0}
+    - target: {fileID: 8222452398046861091, guid: a6daff66bc2d448a19f08d9db85d4cba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4790081987876024698, guid: a6daff66bc2d448a19f08d9db85d4cba,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -823,6 +897,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrystalDestroyEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945140910736979241, guid: c483669cc2cb34e4db23da5c7be95baa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5766813180537738096, guid: c483669cc2cb34e4db23da5c7be95baa,
         type: 3}
