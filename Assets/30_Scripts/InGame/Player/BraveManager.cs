@@ -64,7 +64,7 @@ namespace InGame
 			this.respawner.Initialize(this.Restart);
 		}
 
-		private void Frieze()
+		public void Frieze()
 		{
 			this.hitPoint.SetActiveComponent(false);
 			this.magicPoint.SetActiveComponent(false);
@@ -72,7 +72,7 @@ namespace InGame
 			this.attacker.SetActiveComponent(false);
 		}
 
-		private void UnFrieze()
+		public void UnFrieze()
 		{
 			this.hitPoint.SetActiveComponent(true);
 			this.magicPoint.SetActiveComponent(true);

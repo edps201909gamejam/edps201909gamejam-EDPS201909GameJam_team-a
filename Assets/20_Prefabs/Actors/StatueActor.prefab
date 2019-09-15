@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6989831520592441912}
   - component: {fileID: 494370717545337377}
   - component: {fileID: 4503483775868907552}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: StatueActor
   m_TagString: Symbol
   m_Icon: {fileID: 0}
@@ -50,6 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActiveComponent: 1
   gage: {fileID: 5093035514467500094}
+  enegyValue: 15
 --- !u!136 &494370717545337377
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -255,11 +256,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3188316125489459646}
     m_Modifications:
-    - target: {fileID: 6760139926140342273, guid: 308094db3f6217f4393f7fca95e507c4,
-        type: 3}
-      propertyPath: m_Name
-      value: Gage3DUICanvas
-      objectReference: {fileID: 0}
     - target: {fileID: 7707862671172905284, guid: 308094db3f6217f4393f7fca95e507c4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -364,6 +360,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760139926140342273, guid: 308094db3f6217f4393f7fca95e507c4,
+        type: 3}
+      propertyPath: m_Name
+      value: Gage3DUICanvas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 308094db3f6217f4393f7fca95e507c4, type: 3}

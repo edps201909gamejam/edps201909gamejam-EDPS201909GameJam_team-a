@@ -6,9 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/10_Scenes/Test/flanny7/TestTitle.unity
+    guid: 2af1fd216bb10db4283b5a997560054b
+  - enabled: 1
+    path: Assets/10_Scenes/Test/flanny7/TestInGame.unity
+    guid: ff4e9c315ab77aa408784130f3d8b2f1
+  - enabled: 1
+    path: Assets/10_Scenes/Test/flanny7/TestInGame2.unity
+    guid: 11fdfbd50f418f64384b5309de80841f
+  - enabled: 1
+    path: Assets/10_Scenes/Test/flanny7/TestInGame3.unity
+    guid: 4ca0ce66742286f4faf962f73d45c62b
+  - enabled: 0
     path: Assets/Remuty/Scenes/Remuty.unity
     guid: b166d08871f7a45488996a3ac61e55fd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Remuty/Scenes/ResultTest.unity
     guid: e968eb68a3ec89140a68050abc1cd465
   m_configObjects: {}

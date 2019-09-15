@@ -84,14 +84,14 @@ namespace InGame
 			Destroy(this.gameObject);
 		}
 
-		private void Frieze()
+		public void Frieze()
 		{
 			this.hitPoint.SetActiveComponent(false);
 			this.magicPoint.SetActiveComponent(false);
 			this.factory.SetActiveComponent(false);
 		}
 
-		private void UnFrieze()
+		public void UnFrieze()
 		{
 			this.hitPoint.SetActiveComponent(this.canGenerateMonster);
 			this.magicPoint.SetActiveComponent(!this.canGenerateMonster);

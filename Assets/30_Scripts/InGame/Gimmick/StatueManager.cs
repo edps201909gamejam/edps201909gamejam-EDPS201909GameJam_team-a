@@ -12,6 +12,8 @@ namespace InGame
 
 		[SerializeField]
 		private Gage3DUI gage = null;
+		[SerializeField]
+		private float enegyValue = 90.0f;
 
 		private HitPoint hitPoint = null;
 
@@ -27,8 +29,19 @@ namespace InGame
 
 			if (this.hitPoint.IsDead)
 			{
+				GameManager.Inst.GageCharge(this.enegyValue);
 				Destroy(this.gameObject);
 			}
+		}
+
+		public void Frieze()
+		{
+			this.hitPoint.SetActiveComponent(false);
+		}
+
+		public void UnFrieze()
+		{
+			this.hitPoint.SetActiveComponent(true);
 		}
 	}
 }

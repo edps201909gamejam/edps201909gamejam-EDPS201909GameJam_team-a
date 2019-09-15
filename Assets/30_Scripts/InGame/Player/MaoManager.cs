@@ -46,6 +46,7 @@ namespace InGame
 
 			if (this.hitPoint.IsDead)
 			{
+				GameManager.Inst.Finised(false);
 			}
 		}
 
@@ -54,7 +55,7 @@ namespace InGame
 			Instantiate(crystalPrefab4Skill);
 		}
 
-		private void Frieze()
+		public void Frieze()
 		{
 			this.hitPoint.SetActiveComponent(false);
 			this.magicPoint.SetActiveComponent(false);
@@ -64,7 +65,7 @@ namespace InGame
 			this.healer.SetActiveComponent(false);
 		}
 
-		private void UnFrieze()
+		public void UnFrieze()
 		{
 			this.hitPoint.SetActiveComponent(true);
 			this.magicPoint.SetActiveComponent(true);

@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 243348597d30e384f9e6f1540bd49f91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTransform: {fileID: 27246814284221843}
+  targetTransform: {fileID: 2496253005460662599}
   bufferPosition: {x: 0, y: 2.5, z: 0}
   isFreezeX: 0
   isFreezeY: 1
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 243348597d30e384f9e6f1540bd49f91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTransform: {fileID: 27246814284221843}
+  targetTransform: {fileID: 2496253005460662599}
   bufferPosition: {x: 0, y: 2.5, z: 0}
   isFreezeX: 0
   isFreezeY: 1
@@ -127,7 +127,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 27246814284221843}
+  - {fileID: 2496253005460662599}
   - {fileID: 3743328523502399291}
   - {fileID: 8111395665573532249}
   m_Father: {fileID: 0}
@@ -185,11 +185,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3743328523502399291}
     m_Modifications:
-    - target: {fileID: 6760139926140342273, guid: 308094db3f6217f4393f7fca95e507c4,
-        type: 3}
-      propertyPath: m_Name
-      value: Gage3DUICanvas
-      objectReference: {fileID: 0}
     - target: {fileID: 7707862671172905284, guid: 308094db3f6217f4393f7fca95e507c4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -295,15 +290,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4047961137115014155, guid: 308094db3f6217f4393f7fca95e507c4,
+    - target: {fileID: 6760139926140342273, guid: 308094db3f6217f4393f7fca95e507c4,
         type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4047961137115014155, guid: 308094db3f6217f4393f7fca95e507c4,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
+      propertyPath: m_Name
+      value: Gage3DUICanvas
       objectReference: {fileID: 0}
     - target: {fileID: 7629116822810539528, guid: 308094db3f6217f4393f7fca95e507c4,
         type: 3}
@@ -320,6 +310,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FillAmount
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047961137115014155, guid: 308094db3f6217f4393f7fca95e507c4,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047961137115014155, guid: 308094db3f6217f4393f7fca95e507c4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 308094db3f6217f4393f7fca95e507c4, type: 3}
@@ -348,11 +348,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8111395665573532249}
     m_Modifications:
-    - target: {fileID: 6760139926140342273, guid: 308094db3f6217f4393f7fca95e507c4,
-        type: 3}
-      propertyPath: m_Name
-      value: Gage3DUICanvas
-      objectReference: {fileID: 0}
     - target: {fileID: 7707862671172905284, guid: 308094db3f6217f4393f7fca95e507c4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -458,15 +453,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4047961137115014155, guid: 308094db3f6217f4393f7fca95e507c4,
+    - target: {fileID: 6760139926140342273, guid: 308094db3f6217f4393f7fca95e507c4,
         type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4047961137115014155, guid: 308094db3f6217f4393f7fca95e507c4,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0.05
+      propertyPath: m_Name
+      value: Gage3DUICanvas
       objectReference: {fileID: 0}
     - target: {fileID: 7629116822810539528, guid: 308094db3f6217f4393f7fca95e507c4,
         type: 3}
@@ -488,6 +478,16 @@ PrefabInstance:
       propertyPath: m_FillAmount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4047961137115014155, guid: 308094db3f6217f4393f7fca95e507c4,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047961137115014155, guid: 308094db3f6217f4393f7fca95e507c4,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 308094db3f6217f4393f7fca95e507c4, type: 3}
 --- !u!224 &2947537075427851068 stripped
@@ -508,18 +508,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7266fdbac8a20439b3f98688b29e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &8160261320260894677
+--- !u!1001 &6051613434642258689
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 6095748743367020423}
     m_Modifications:
-    - target: {fileID: 8278370184721074789, guid: 80ec4ae22e2ab3643b6ea5391fc319b3,
-        type: 3}
-      propertyPath: m_Name
-      value: Brave
-      objectReference: {fileID: 0}
     - target: {fileID: 8169493143179145798, guid: 80ec4ae22e2ab3643b6ea5391fc319b3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -575,6 +570,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8278370184721074789, guid: 80ec4ae22e2ab3643b6ea5391fc319b3,
+        type: 3}
+      propertyPath: m_Name
+      value: BraveActor
+      objectReference: {fileID: 0}
     - target: {fileID: 3443497373248476225, guid: 80ec4ae22e2ab3643b6ea5391fc319b3,
         type: 3}
       propertyPath: hitPointGage
@@ -592,9 +592,9 @@ PrefabInstance:
       objectReference: {fileID: 6095748743367020423}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80ec4ae22e2ab3643b6ea5391fc319b3, type: 3}
---- !u!4 &27246814284221843 stripped
+--- !u!4 &2496253005460662599 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8169493143179145798, guid: 80ec4ae22e2ab3643b6ea5391fc319b3,
     type: 3}
-  m_PrefabInstance: {fileID: 8160261320260894677}
+  m_PrefabInstance: {fileID: 6051613434642258689}
   m_PrefabAsset: {fileID: 0}

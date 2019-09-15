@@ -39,6 +39,8 @@ namespace InGame
 		{
 			if (!this.IsActiveComponent()) { return; }
 
+			if (TimeManager.Inst.MaoTimePhase) { return; }
+
 			this.elapsedTime += Time.deltaTime;
 
 			if (this.intervalTime <= this.elapsedTime)

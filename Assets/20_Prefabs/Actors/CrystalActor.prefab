@@ -69,7 +69,7 @@ MonoBehaviour:
   magickCircleSpriteRender: {fileID: 2423765174708060961}
   hitPointGage: {fileID: 4247948050686505909}
   magicPointGage: {fileID: 8438649258204820338}
-  isFullMPStart: 1
+  isFullMPStart: 0
 --- !u!114 &8873688687715456843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,11 +253,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1814539659765897605}
     m_Modifications:
-    - target: {fileID: 6760139926140342273, guid: 308094db3f6217f4393f7fca95e507c4,
-        type: 3}
-      propertyPath: m_Name
-      value: Gage3DUICanvas (MP)
-      objectReference: {fileID: 0}
     - target: {fileID: 7707862671172905284, guid: 308094db3f6217f4393f7fca95e507c4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -363,6 +358,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6760139926140342273, guid: 308094db3f6217f4393f7fca95e507c4,
+        type: 3}
+      propertyPath: m_Name
+      value: Gage3DUICanvas (MP)
+      objectReference: {fileID: 0}
     - target: {fileID: 7629116822810539528, guid: 308094db3f6217f4393f7fca95e507c4,
         type: 3}
       propertyPath: m_FillAmount
@@ -395,11 +395,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1814539659765897605}
     m_Modifications:
-    - target: {fileID: 5720940955279804791, guid: 222f26e95792fc54ead424e6d51e8757,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal
-      objectReference: {fileID: 0}
     - target: {fileID: 5720940955279804784, guid: 222f26e95792fc54ead424e6d51e8757,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -455,6 +450,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5720940955279804791, guid: 222f26e95792fc54ead424e6d51e8757,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 222f26e95792fc54ead424e6d51e8757, type: 3}
 --- !u!4 &1549607623365009657 stripped
@@ -470,16 +470,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1814539659765897605}
     m_Modifications:
-    - target: {fileID: 6760139926140342273, guid: 308094db3f6217f4393f7fca95e507c4,
-        type: 3}
-      propertyPath: m_Name
-      value: Gage3DUICanvas (HP)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6760139926140342273, guid: 308094db3f6217f4393f7fca95e507c4,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7707862671172905284, guid: 308094db3f6217f4393f7fca95e507c4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -584,6 +574,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760139926140342273, guid: 308094db3f6217f4393f7fca95e507c4,
+        type: 3}
+      propertyPath: m_Name
+      value: Gage3DUICanvas (HP)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760139926140342273, guid: 308094db3f6217f4393f7fca95e507c4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7629116822810539528, guid: 308094db3f6217f4393f7fca95e507c4,
         type: 3}

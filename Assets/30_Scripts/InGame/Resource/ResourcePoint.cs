@@ -10,7 +10,7 @@ namespace InGame
 		public void SetActiveComponent(bool _isActive) { this.isActiveComponent = _isActive; }
 
 		[SerializeField, Min(1)]
-		protected int maxValue = 1;
+		protected float maxValue = 1;
 		[SerializeField]
 		protected AudioSource audioSource = null;
 		[SerializeField]
@@ -18,7 +18,7 @@ namespace InGame
 		[SerializeField]
 		protected AudioClip damageClip = null;
 
-		public int Value { get; protected set; }
+		public float Value { get; protected set; }
 		public float Rate { get => this.Value / this.maxValue; }
 		public bool IsDead { get => this.Value <= 0; }
 		public bool IsFull { get => this.maxValue <= this.Value; }
@@ -26,7 +26,7 @@ namespace InGame
 		private bool canHealSE = false;
 		private bool canDamageSE = false;
 
-		public void Heal(int _value, bool _se = true)
+		public void Heal(float _value, bool _se = true)
 		{
 			if (!this.IsActiveComponent()) { return; }
 			if (_value < 0) { Debug.LogWarning("0未満は処理されません。", this); return; }
@@ -36,7 +36,7 @@ namespace InGame
 			if (_se && this.canHealSE) { this.audioSource.PlayOneShot(this.healClip); }
 		}
 
-		public void Damage(int _value, bool _se = true)
+		public void Damage(float _value, bool _se = true)
 		{
 			if (!this.IsActiveComponent()) { return; }
 			if (_value < 0) { Debug.LogWarning("0未満は処理されません。", this); return; }

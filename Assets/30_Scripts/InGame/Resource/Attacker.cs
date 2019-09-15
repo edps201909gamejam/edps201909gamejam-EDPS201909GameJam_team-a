@@ -37,7 +37,7 @@ namespace InGame
 			{
 				var isKeyEmpty = (this.keyCodes is null) || (this.keyCodes.Length <= 0);
 				var isButtonEmpty = (this.axes is null) || (this.axes.Length <= 0);
-				
+
 				if (isKeyEmpty && isButtonEmpty) { Debug.LogError("Key and Button are Empty.", this); }
 			}
 			else
@@ -110,7 +110,7 @@ namespace InGame
 					var hp = target.GetComponent<HitPoint>();
 					if (hp != null)
 					{
-						hp.Damage(this.attackPoint, (!isPlayed || !isOneShotPlaySE));
+						hp.Damage(this.attackPoint * Time.deltaTime * 60, (!isPlayed || !isOneShotPlaySE));
 						isPlayed = true;
 						Debug.Log("Attack: " + target.name, target);
 					}
